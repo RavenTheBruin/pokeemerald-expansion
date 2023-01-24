@@ -573,7 +573,7 @@ Route106_Text_FreddyDefeated:
 
 Route106_Text_FreddyPostBattle:
 	.string "Did you spot the Sonic Adventure 2\n"
-	.string "reference?.$"
+	.string "reference?$"
 
 Route106_Text_DouglasIntro:
 	.string "Hahahah! I'm a lousy runner, but in\n"
