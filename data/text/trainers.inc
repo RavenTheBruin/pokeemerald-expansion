@@ -535,20 +535,20 @@ Route105_Text_JosuePostBattle:
 	.string "match than the sea.$"
 
 Route106_Text_ElliotIntro:
-	.string "Which do you prefer, fishing in the\n"
-	.string "sea or a stream?$"
+	.string "I'm wet, I'm cold,\n"
+	.string "there's a fish on my head,\l"
+	.string "and clearly I'm not gonna be able\n"
+	.string "to do this on my own!$" 
 
 Route106_Text_ElliotDefeated:
-	.string "Like in deep-sea fishing, I lost\n"
-	.string "spectacularly!$"
+	.string "I knew this would be too much.$"
 
 Route106_Text_ElliotPostBattle:
-	.string "Fishing is the greatest whether it's\n"
-	.string "in the sea or a stream.\l"
-	.string "You agree with me, right?$"
+	.string "My fish will keep me company.$"
 
 Route106_Text_ElliotRegister:
-	.string "Fishing's great, but so is battling.\n"
+	.string "I would like to have someone I can\n"
+	.string "call if I feel alone again.\l"
 	.string "If you don't mind, can we meet again?$"
 
 Route106_Text_ElliotRematchIntro:
@@ -562,19 +562,18 @@ Route106_Text_ElliotRematchPostBattle:
 	.string "Win or lose, POKéMON are the greatest!\n"
 	.string "You agree with me, right?$"
 
-Route106_Text_NedIntro:
-	.string "What do people do if they need to go\n"
-	.string "to a washroom?\p"
-	.string "What if my ROD hooks a big one while\n"
-	.string "I'm in the washroom? I just can't go…$"
+Route106_Text_FreddyIntro:
+	.string "What you see is what you get.\n"
+	.string "Just a fisherman that loves adventure.\p"
+	.string "I'm Freddy the Fisherman!$"
 
-Route106_Text_NedDefeated:
-	.string "I lost because I'm trying to not go\n"
-	.string "to the washroom…$"
+Route106_Text_FreddyDefeated:
+	.string "Ah you beat me, you'd make a good\n"
+	.string "fisherman yourself!$"
 
-Route106_Text_NedPostBattle:
-	.string "Oh, no! I've got this feeling I'll hook\n"
-	.string "a big one!$"
+Route106_Text_FreddyPostBattle:
+	.string "Did you spot the Sonic Adventure 2\n"
+	.string "reference?.$"
 
 Route106_Text_DouglasIntro:
 	.string "Hahahah! I'm a lousy runner, but in\n"

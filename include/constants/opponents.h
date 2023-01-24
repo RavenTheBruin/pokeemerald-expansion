@@ -341,7 +341,7 @@
 #define TRAINER_IVAN                        337
 #define TRAINER_CLAUDE                      338
 #define TRAINER_ELLIOT_1                    339
-#define TRAINER_NED                         340
+#define TRAINER_FREDDY                      340
 #define TRAINER_DALE                        341
 #define TRAINER_NOLAN                       342
 #define TRAINER_BARNY                       343
@@ -573,7 +573,7 @@
 #define TRAINER_GRUNT_MT_PYRE_4             569
 #define TRAINER_GRUNT_JAGGED_PASS           570
 #define TRAINER_MARC                        571
-#define TRAINER_BRENDEN                     572
+#define TRAINER_LISA                        572
 #define TRAINER_LILITH                      573
 #define TRAINER_CRISTIAN                    574
 #define TRAINER_SYLVIA                      575

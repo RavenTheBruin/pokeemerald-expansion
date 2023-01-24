@@ -1540,7 +1540,7 @@ const u16 gVerdanturfBattleTentTrainerMons_Marquis[] =
     -1
 };
 
-const u16 gVerdanturfBattleTentTrainerMons_Freddy[] =
+const u16 gVerdanturfBattleTentTrainerMons_Dudebro[] =
 {
     VERDANTURF_TENT_MON_LOTAD,
     VERDANTURF_TENT_MON_SEVIPER,
@@ -1786,13 +1786,13 @@ const struct BattleFrontierTrainer gVerdanturfBattleTentTrainers[NUM_BATTLE_TENT
         .speechLose = {EC_WORD_SHOULD, EC_WORD_I, EC_WORD_CAUSE, EC_WORD_AN, EC_MOVE(UPROAR), EC_WORD_QUES},
         .monSet = gVerdanturfBattleTentTrainerMons_Marquis
     },
-    [VERDANTURF_TENT_TRAINER_FREDDY] = {
+    [VERDANTURF_TENT_TRAINER_DUDEBRO] = {
         .facilityClass = FACILITY_CLASS_COLLECTOR,
-        .trainerName = _("FREDDY"),
+        .trainerName = _("DUDEBRO"),
         .speechBefore = {EC_WORD_I, EC_WORD_ADORE, EC_WORD_THIS, EC_WORD_CUTE, EC_WORD_TELEVISION, EC_WORD_IDOL},
         .speechWin = {EC_WORD_YOU_RE, EC_WORD_SO, EC_WORD_FUNNY, EC_WORD_WHEN, EC_WORD_YOU_RE, EC_WORD_ANGRY},
         .speechLose = {EC_WORD_LATE, EC_WORD_NIGHT, EC_WORD_TELEVISION, EC_WORD_IS, EC_WORD_MY, EC_WORD_LIFE},
-        .monSet = gVerdanturfBattleTentTrainerMons_Freddy
+        .monSet = gVerdanturfBattleTentTrainerMons_Dudebro
     },
     [VERDANTURF_TENT_TRAINER_CECILIA] = {
         .facilityClass = FACILITY_CLASS_LASS,

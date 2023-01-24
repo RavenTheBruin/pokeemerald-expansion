@@ -20,7 +20,7 @@ DewfordTown_Gym_SetGymTrainers::
 	settrainerflag TRAINER_TAKAO
 	settrainerflag TRAINER_JOCELYN
 	settrainerflag TRAINER_LAURA
-	settrainerflag TRAINER_BRENDEN
+	settrainerflag TRAINER_LISA
 	settrainerflag TRAINER_CRISTIAN
 	settrainerflag TRAINER_LILITH
 	return

@@ -121,9 +121,6 @@ const u32 gTrainerPalette_EliteFourDrake[] = INCBIN_U32("graphics/trainers/front
 const u32 gTrainerFrontPic_LeaderRoxanne[] = INCBIN_U32("graphics/trainers/front_pics/leader_roxanne.4bpp.lz");
 const u32 gTrainerPalette_LeaderRoxanne[] = INCBIN_U32("graphics/trainers/front_pics/leader_roxanne.gbapal.lz");
 
-const u32 gTrainerFrontPic_LeaderWattson[] = INCBIN_U32("graphics/trainers/front_pics/leader_wattson.4bpp.lz");
-const u32 gTrainerPalette_LeaderWattson[] = INCBIN_U32("graphics/trainers/front_pics/leader_wattson.gbapal.lz");
-
 const u32 gTrainerFrontPic_LeaderFlannery[] = INCBIN_U32("graphics/trainers/front_pics/leader_flannery.4bpp.lz");
 const u32 gTrainerPalette_LeaderFlannery[] = INCBIN_U32("graphics/trainers/front_pics/leader_flannery.gbapal.lz");
 
@@ -288,3 +285,6 @@ const u32 gTrainerBackPicPalette_Leaf[] = INCBIN_U32("graphics/trainers/back_pic
 
 const u32 gTrainerFrontPic_LeaderFlorea[] = INCBIN_U32("graphics/trainers/front_pics/florea.4bpp.lz");
 const u32 gTrainerPalette_LeaderFlorea[] = INCBIN_U32("graphics/trainers/palettes/florea.gbapal.lz");
+
+const u32 gTrainerFrontPic_LeaderFelucia[] = INCBIN_U32("graphics/trainers/front_pics/felucia.4bpp.lz");
+const u32 gTrainerPalette_LeaderFelucia[] = INCBIN_U32("graphics/trainers/front_pics/felucia.gbapal.lz");

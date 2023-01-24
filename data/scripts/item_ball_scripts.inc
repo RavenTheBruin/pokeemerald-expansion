@@ -657,3 +657,7 @@ MagmaHideout_4F_EventScript_ItemMaxRevive::
 MagmaHideout_3F_3R_EventScript_ItemEscapeRope::
 	finditem ITEM_ESCAPE_ROPE
 	end
+
+DewfordTown_Gym_EventScript_ItemSuperPotion::
+	finditem ITEM_SUPER_POTION
+	end
