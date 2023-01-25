@@ -199,7 +199,13 @@ DewfordTown_Gym_EventScript_TakaoBrightenRoom::
 
 DewfordTown_Gym_EventScript_Jocelyn::
 	trainerbattle_single TRAINER_JOCELYN, DewfordTown_Gym_Text_JocelynIntro, DewfordTown_Gym_Text_JocelynDefeat, DewfordTown_Gym_EventScript_JocelynBrightenRoom
-	msgbox DewfordTown_Gym_Text_JocelynPostBattle, MSGBOX_AUTOCLOSE
+	goto_if_set FLAG_DEFEATED_DEWFORD_GYM, DewfordTown_Gym_EventScript_JocelynPostGym
+	msgbox DewfordTown_Gym_Text_JocelynPostGym, MSGBOX_AUTOCLOSE
+	end
+
+DewfordTown_Gym_EventScript_JocelynPostGym::
+	msgbox DewfordTown_Gym_Text_JocelynPostGym, MSGBOX_DEFAULT
+	release
 	end
 
 DewfordTown_Gym_EventScript_JocelynBrightenRoom::
@@ -319,6 +325,9 @@ DewfordTown_Gym_Text_JocelynDefeat:
 DewfordTown_Gym_Text_JocelynPostBattle:
 	.string "I hope they fix the lights soon.$"
 
+DewfordTown_Gym_Text_JocelynPostGym:
+	.string "They fixed the lights, how wonderful.$"
+
 DewfordTown_Gym_Text_LauraIntro:
 	.string "Florea is so nice to all of us.$"
 
@@ -399,16 +408,17 @@ DewfordTown_Gym_Text_KnuckleBadgeInfoTakeThis:
 
 DewfordTown_Gym_Text_ExplainSafeguard:
 	.string "That TM20 contains SAFEGUARD.\p"
-	.string "It's a move that prevents your POKéMON from\n"
-	.string "being affected by most status conditions.$"
+	.string "It's a move that prevents your\n"
+	.string "POKéMON fromt being affected by\l"
+	.string "most status conditions.$"
 
 DewfordTown_Gym_Text_RegisteredBrawly:
 	.string "Registered GYM LEADER FLOREA\n"
 	.string "in the POKéNAV.$"
 
 DewfordTown_Gym_Text_FloreaPostBattle:
-	.string "I can totally see you go far\n"
-	.string "and go all the way to the POKéMON LEAGUE.\p"
+	.string "I can totally see you go far and\n"
+	.string "go all the way to the POKéMON LEAGUE.\p"
 	.string "Good luck on your efforts!$"
 
 DewfordTown_Gym_Text_GymStatue:
