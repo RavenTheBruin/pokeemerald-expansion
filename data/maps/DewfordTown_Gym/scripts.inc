@@ -364,13 +364,14 @@ DewfordTown_Gym_Text_CristianPostBattle:
 	.string "Best of luck on your gym challenge.$"
 
 DewfordTown_Gym_Text_FloreaIntro:
-	.string "I'm FLOREA!\n"
-	.string "DEWFORD's GYM LEADER!\p"
-	.string "I've been churned in the rough waves\n"
-	.string "of these parts, and I've grown tough\l"
-	.string "in the pitch-black cave!\p"
-	.string "So you wanted to challenge me?\n"
-	.string "Let me see what you're made of!$"
+	.string "Hi, I'm FLOREA!\n"
+	.string "I'm the GYM LEADER of DEWFORD TOWN.\p"
+	.string "Isn't the gym so pretty? Everyone\n"
+	.string "worked really hard on it.\p"
+	.string "Oh, right. You're probably here to\n"
+	.string "challenge me for a GYM BADGE aren't\l"
+	.string "you?\p"
+	.string "Alright bring it on!$"
 
 DewfordTown_Gym_Text_FloreaDefeat:
 	.string "Whoah, wow! You made a much bigger\n"
@@ -379,12 +380,16 @@ DewfordTown_Gym_Text_FloreaDefeat:
 	.string "Okay, you've got me.\n"
 	.string "Take this GYM BADGE!$"
 
+	.string "Wow, incredible!\p"
+	.string "I was no match for your strength./p"
+	.string "Here's the badge you came for!$"
+
 DewfordTown_Gym_Text_ReceivedKnuckleBadge:
 	.string "{PLAYER} received the FOXGLOVE BADGE\n"
 	.string "from FLOREA.$"
 
 DewfordTown_Gym_Text_KnuckleBadgeInfoTakeThis:
-	.string "The KNUCKLE BADGE makes all POKéMON\n"
+	.string "The FOXGLOVE BADGE makes all POKéMON\n"
 	.string "up to Level 30, even those you get in\l"
 	.string "trades, obey without question.\p"
 	.string "And, you'll be able to use the HM move\n"
@@ -402,16 +407,16 @@ DewfordTown_Gym_Text_RegisteredBrawly:
 	.string "in the POKéNAV.$"
 
 DewfordTown_Gym_Text_FloreaPostBattle:
-	.string "I can see your talent becoming a giant\n"
-	.string "wave to cause a storm of astonishment\l"
-	.string "among TRAINERS one day!$"
+	.string "I can totally see you go far\n"
+	.string "and go all the way to the POKéMON LEAGUE.\p"
+	.string "Good luck on your efforts!$"
 
 DewfordTown_Gym_Text_GymStatue:
 	.string "DEWFORD TOWN POKéMON GYM$"
 
 DewfordTown_Gym_Text_GymStatueCertified:
 	.string "DEWFORD TOWN POKéMON GYM\p"
-	.string "BRAWLY'S CERTIFIED TRAINERS:\n"
+	.string "FLOREA'S CERTIFIED TRAINERS:\n"
 	.string "{PLAYER}$"
 
 DewfordTown_Gym_Text_FloreaPreRematch:
