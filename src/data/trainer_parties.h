@@ -2152,11 +2152,12 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Tony5[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_Takao[] = {
+static const struct TrainerMonItemDefaultMoves sParty_Takao[] = {
     {
     .iv = 127,
     .lvl = 13,
     .species = SPECIES_TAILLOW,
+    .heldItem = ITEM_QUICK_CLAW
     }
 };
 
@@ -3408,7 +3409,7 @@ static const struct TrainerMonItemCustomMoves sParty_Florea1[] = {
     .lvl = 18,
     .species = SPECIES_STANTLER,
     .heldItem = ITEM_ORAN_BERRY,
-    .moves = {MOVE_TACKLE, MOVE_STOMP, MOVE_SAND_ATTACK, MOVE_ASTONISH}
+    .moves = {MOVE_SAFEGUARD, MOVE_STOMP, MOVE_SAND_ATTACK, MOVE_ASTONISH}
     }
 };
 

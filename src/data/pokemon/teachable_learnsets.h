@@ -9638,6 +9638,7 @@ static const u16 sStantlerTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_THUNDER_WAVE,
+    MOVE_SAFEGUARD,
     MOVE_UNAVAILABLE,
 };
 

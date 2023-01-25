@@ -132,16 +132,16 @@ DewfordTown_Gym_EventScript_CheckLilith::
 DewfordTown_Gym_EventScript_StopCountingTrainers::
 	return
 
-DewfordTown_Gym_EventScript_Brawly::
-	trainerbattle_single TRAINER_FLOREA_1, DewfordTown_Gym_Text_BrawlyIntro, DewfordTown_Gym_Text_BrawlyDefeat, DewfordTown_Gym_EventScript_BrawlyDefeated, NO_MUSIC
+DewfordTown_Gym_EventScript_Florea::
+	trainerbattle_single TRAINER_FLOREA_1, DewfordTown_Gym_Text_FloreaIntro, DewfordTown_Gym_Text_FloreaDefeat, DewfordTown_Gym_EventScript_FloreaDefeated, NO_MUSIC
 	specialvar VAR_RESULT, ShouldTryRematchBattle
-	goto_if_eq VAR_RESULT, TRUE, DewfordTown_Gym_EventScript_BrawlyRematch
-	goto_if_unset FLAG_RECEIVED_TM08, DewfordTown_Gym_EventScript_GiveBulkUp2
-	msgbox DewfordTown_Gym_Text_BrawlyPostBattle, MSGBOX_DEFAULT
+	goto_if_eq VAR_RESULT, TRUE, DewfordTown_Gym_EventScript_FloreaRematch
+	goto_if_unset FLAG_RECEIVED_TM20, DewfordTown_Gym_EventScript_GiveSafeguard2
+	msgbox DewfordTown_Gym_Text_FloreaPostBattle, MSGBOX_DEFAULT
 	release
 	end
 
-DewfordTown_Gym_EventScript_BrawlyDefeated::
+DewfordTown_Gym_EventScript_FloreaDefeated::
 	call DewfordTown_Gym_EventScript_AnimateFlashFullBrightness
 	message DewfordTown_Gym_Text_ReceivedKnuckleBadge
 	waitmessage
@@ -153,7 +153,7 @@ DewfordTown_Gym_EventScript_BrawlyDefeated::
 	call_if_eq VAR_PETALBURG_GYM_STATE, 6, Common_EventScript_ReadyPetalburgGymForBattle
 	setvar VAR_0x8008, 2
 	call Common_EventScript_SetGymTrainers
-	call DewfordTown_Gym_EventScript_GiveBulkUp
+	call DewfordTown_Gym_EventScript_GiveSafeguard
 	closemessage
 	delay 30
 	playfanfare MUS_REGISTER_MATCH_CALL
@@ -167,24 +167,24 @@ DewfordTown_Gym_EventScript_BrawlyDefeated::
 	release
 	end
 
-DewfordTown_Gym_EventScript_GiveBulkUp::
-	giveitem ITEM_TM08
+DewfordTown_Gym_EventScript_GiveSafeguard::
+	giveitem ITEM_TM20
 	goto_if_eq VAR_RESULT, 0, Common_EventScript_BagIsFull
-	msgbox DewfordTown_Gym_Text_ExplainBulkUp, MSGBOX_DEFAULT
-	setflag FLAG_RECEIVED_TM08
+	msgbox DewfordTown_Gym_Text_ExplainSafeguard, MSGBOX_DEFAULT
+	setflag FLAG_RECEIVED_TM20
 	return
 
-DewfordTown_Gym_EventScript_GiveBulkUp2:
-	giveitem ITEM_TM08
+DewfordTown_Gym_EventScript_GiveSafeguard2:
+	giveitem ITEM_TM20
 	goto_if_eq VAR_RESULT, 0, Common_EventScript_ShowBagIsFull
-	msgbox DewfordTown_Gym_Text_ExplainBulkUp, MSGBOX_DEFAULT
-	setflag FLAG_RECEIVED_TM08
+	msgbox DewfordTown_Gym_Text_ExplainSafeguard, MSGBOX_DEFAULT
+	setflag FLAG_RECEIVED_TM20
 	release
 	end
 
-DewfordTown_Gym_EventScript_BrawlyRematch::
-	trainerbattle_rematch_double TRAINER_FLOREA_1, DewfordTown_Gym_Text_BrawlyPreRematch, DewfordTown_Gym_Text_BrawlyRematchDefeat, DewfordTown_Gym_Text_BrawlyRematchNeedTwoMons
-	msgbox DewfordTown_Gym_Text_BrawlyPostRematch, MSGBOX_AUTOCLOSE
+DewfordTown_Gym_EventScript_FloreaRematch::
+	trainerbattle_rematch_double TRAINER_FLOREA_1, DewfordTown_Gym_Text_FloreaPreRematch, DewfordTown_Gym_Text_FloreaRematchDefeat, DewfordTown_Gym_Text_FloreaRematchNeedTwoMons
+	msgbox DewfordTown_Gym_Text_FloreaPostRematch, MSGBOX_AUTOCLOSE
 	end
 
 DewfordTown_Gym_EventScript_Takao::
@@ -363,7 +363,7 @@ DewfordTown_Gym_Text_CristianDefeat:
 DewfordTown_Gym_Text_CristianPostBattle:
 	.string "Best of luck on your gym challenge.$"
 
-DewfordTown_Gym_Text_BrawlyIntro:
+DewfordTown_Gym_Text_FloreaIntro:
 	.string "I'm FLOREA!\n"
 	.string "DEWFORD's GYM LEADER!\p"
 	.string "I've been churned in the rough waves\n"
@@ -372,7 +372,7 @@ DewfordTown_Gym_Text_BrawlyIntro:
 	.string "So you wanted to challenge me?\n"
 	.string "Let me see what you're made of!$"
 
-DewfordTown_Gym_Text_BrawlyDefeat:
+DewfordTown_Gym_Text_FloreaDefeat:
 	.string "Whoah, wow! You made a much bigger\n"
 	.string "splash than I expected!\p"
 	.string "You swamped me!\p"
@@ -380,7 +380,7 @@ DewfordTown_Gym_Text_BrawlyDefeat:
 	.string "Take this GYM BADGE!$"
 
 DewfordTown_Gym_Text_ReceivedKnuckleBadge:
-	.string "{PLAYER} received the KNUCKLE BADGE\n"
+	.string "{PLAYER} received the FOXGLOVE BADGE\n"
 	.string "from FLOREA.$"
 
 DewfordTown_Gym_Text_KnuckleBadgeInfoTakeThis:
@@ -392,17 +392,16 @@ DewfordTown_Gym_Text_KnuckleBadgeInfoTakeThis:
 	.string "If you'd like, use this TECHNICAL\n"
 	.string "MACHINE, too.$"
 
-DewfordTown_Gym_Text_ExplainBulkUp:
-	.string "That TM08 contains BULK UP.\p"
-	.string "It's a move that raises both ATTACK\n"
-	.string "and DEFENSE stats.\p"
-	.string "… … … … … …$"
+DewfordTown_Gym_Text_ExplainSafeguard:
+	.string "That TM20 contains SAFEGUARD.\p"
+	.string "It's a move that prevents your POKéMON from\n"
+	.string "being affected by most status conditions.$"
 
 DewfordTown_Gym_Text_RegisteredBrawly:
-	.string "Registered GYM LEADER BRAWLY\n"
+	.string "Registered GYM LEADER FLOREA\n"
 	.string "in the POKéNAV.$"
 
-DewfordTown_Gym_Text_BrawlyPostBattle:
+DewfordTown_Gym_Text_FloreaPostBattle:
 	.string "I can see your talent becoming a giant\n"
 	.string "wave to cause a storm of astonishment\l"
 	.string "among TRAINERS one day!$"
@@ -415,7 +414,7 @@ DewfordTown_Gym_Text_GymStatueCertified:
 	.string "BRAWLY'S CERTIFIED TRAINERS:\n"
 	.string "{PLAYER}$"
 
-DewfordTown_Gym_Text_BrawlyPreRematch:
+DewfordTown_Gym_Text_FloreaPreRematch:
 	.string "BRAWLY: A wave may draw back, but it\n"
 	.string "always returns to the shore.\p"
 	.string "A giant wave of a talent like you…\n"
@@ -423,16 +422,16 @@ DewfordTown_Gym_Text_BrawlyPreRematch:
 	.string "Show me how much higher\n"
 	.string "you've gone!$"
 
-DewfordTown_Gym_Text_BrawlyRematchDefeat:
+DewfordTown_Gym_Text_FloreaRematchDefeat:
 	.string "Wow!\n"
 	.string "Swamped again!$"
 
-DewfordTown_Gym_Text_BrawlyPostRematch:
+DewfordTown_Gym_Text_FloreaPostRematch:
 	.string "BRAWLY: Battling is vast and it's deep.\n"
 	.string "You can't see the bottom.\l"
 	.string "It's just like the sea of HOENN!$"
 
-DewfordTown_Gym_Text_BrawlyRematchNeedTwoMons:
+DewfordTown_Gym_Text_FloreaRematchNeedTwoMons:
 	.string "BRAWLY: A wave may draw back, but it\n"
 	.string "always returns to the shore.\p"
 	.string "A giant wave of a talent like you…\n"
