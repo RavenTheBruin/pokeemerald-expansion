@@ -288,3 +288,4 @@ const u32 gTrainerPalette_LeaderFlorea[] = INCBIN_U32("graphics/trainers/palette
 
 const u32 gTrainerFrontPic_LeaderFelucia[] = INCBIN_U32("graphics/trainers/front_pics/felucia.4bpp.lz");
 const u32 gTrainerPalette_LeaderFelucia[] = INCBIN_U32("graphics/trainers/front_pics/felucia.gbapal.lz");
+

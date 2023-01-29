@@ -130,7 +130,7 @@
 #define OBJ_EVENT_GFX_BRAWLY                     126
 #define OBJ_EVENT_GFX_WATTSON                    127
 #define OBJ_EVENT_GFX_FLANNERY                   128
-#define OBJ_EVENT_GFX_NORMAN                     129
+#define OBJ_EVENT_GFX_SVONER                     129
 #define OBJ_EVENT_GFX_WINONA                     130
 #define OBJ_EVENT_GFX_LIZA                       131
 #define OBJ_EVENT_GFX_TATE                       132

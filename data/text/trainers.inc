@@ -536,7 +536,7 @@ Route105_Text_JosuePostBattle:
 
 Route106_Text_ElliotIntro:
 	.string "I'm wet, I'm cold,\n"
-	.string "there's a fish on my head,\l"
+	.string "there's a fish on my head,\p"
 	.string "and clearly I'm not gonna be able\n"
 	.string "to do this on my own!$" 
 

@@ -129,7 +129,7 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Florea;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Wattson;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Felucia;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Flannery;
-extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Norman;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Svoner;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Winona;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Liza;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Tate;
@@ -378,7 +378,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_BRAWLY] =                   &gObjectEventGraphicsInfo_Brawly,
     [OBJ_EVENT_GFX_WATTSON] =                  &gObjectEventGraphicsInfo_Wattson,
     [OBJ_EVENT_GFX_FLANNERY] =                 &gObjectEventGraphicsInfo_Flannery,
-    [OBJ_EVENT_GFX_NORMAN] =                   &gObjectEventGraphicsInfo_Norman,
+    [OBJ_EVENT_GFX_SVONER] =                   &gObjectEventGraphicsInfo_Svoner,
     [OBJ_EVENT_GFX_WINONA] =                   &gObjectEventGraphicsInfo_Winona,
     [OBJ_EVENT_GFX_LIZA] =                     &gObjectEventGraphicsInfo_Liza,
     [OBJ_EVENT_GFX_TATE] =                     &gObjectEventGraphicsInfo_Tate,

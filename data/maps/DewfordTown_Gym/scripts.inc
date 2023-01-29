@@ -200,7 +200,7 @@ DewfordTown_Gym_EventScript_TakaoBrightenRoom::
 DewfordTown_Gym_EventScript_Jocelyn::
 	trainerbattle_single TRAINER_JOCELYN, DewfordTown_Gym_Text_JocelynIntro, DewfordTown_Gym_Text_JocelynDefeat, DewfordTown_Gym_EventScript_JocelynBrightenRoom
 	goto_if_set FLAG_DEFEATED_DEWFORD_GYM, DewfordTown_Gym_EventScript_JocelynPostGym
-	msgbox DewfordTown_Gym_Text_JocelynPostGym, MSGBOX_AUTOCLOSE
+	msgbox DewfordTown_Gym_Text_JocelynPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 DewfordTown_Gym_EventScript_JocelynPostGym::
@@ -297,7 +297,8 @@ DewfordTown_Gym_Text_GymGuideAdvice:
 	.string "often finding items their trainer missed\l"
 	.string "out in the field.\p"
 	.string "We're just finishing up on renovations\n"
-	.string "here so the lights are still malfunctioning.\l"
+	.string "here so the lights are still\l"
+	.string "malfunctioning.\p"
 	.string "They should be getting fixed soon.\p"
 	.string "Hey, okay, good luck on the challenge!$"
 
@@ -307,7 +308,7 @@ DewfordTown_Gym_Text_GymGuidePostVictory:
 
 DewfordTown_Gym_Text_TakaoIntro:
 	.string "I'll show you what true speed\n"
-	.STRING "REALLY is!$"
+	.string "REALLY is!$"
 
 DewfordTown_Gym_Text_TakaoDefeat:
 	.string "You're much faster than me.$"
@@ -332,7 +333,7 @@ DewfordTown_Gym_Text_LauraIntro:
 	.string "Florea is so nice to all of us.$"
 
 DewfordTown_Gym_Text_LauraDefeat:
-	.string "It's okay that I lost./p"
+	.string "It's okay that I lost.\p"
 	.string "We all grow together here.$"
 
 DewfordTown_Gym_Text_LauraPostBattle:
